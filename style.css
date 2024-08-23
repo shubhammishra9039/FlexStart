@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* ? +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ! ++++++++++++++++++++ Nav Start Here+++++++++++++++++++++++++++++++++++++ */
+nav {
+  width: 100%;
+  height: 15vh;
+  /* border: 2px solid red; */
+  position: relative;
+  position: sticky;
+  z-index: 999;
+}
+
+.nav-container {
+  width: 90%;
+  height: 13vh;
+  /* border: 2px solid red; */
+  justify-content: space-between;
+}
+
+.logo {
+  width: 13%;
+  gap: 15px;
+}
+.logo img {
+  height: 21px;
+}
+.logo span {
+  font-size: 22px;
+  font-weight: 700;
+  color: #012970;
+}
+
+.links ul {
+  list-style: none;
+  gap: 50px;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: #012970;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.button button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #5d6df3;
+}
+.icon i {
+  display: none;
+}
+.benner
+{
+    width: 100%;
+    height: 100vh;
+    border: 2px solid red;
+    position: relative;
+}
+.benner img
+{
+    position: absolute;
+    animation-name: updwon;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+.demo
+{
+    width: 100%;
+    height: 100vh;
+    padding: 250px;
+    position: relative;
+}
+.demo img
+{
+    height: 300px;
+    position: absolute;
+    animation-name: top;
+    animation-duration: .5s;
+    animation-delay: .4s;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+/* ! ++++++++++++++++++++ Nav Start Here+++++++++++++++++++++++++++++++++++++ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  !animation here =================*/
+
+@keyframes updwon {
+    0%{
+        bottom: -10px;
+    }
+    100%
+    {
+        bottom: 0;
+    }
+    
+}
+
+@keyframes top {
+    0%{
+        bottom: -10px;
+    }
+    100%
+    {
+        bottom: 15px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+/* Responsive Designee Code  */
+
+@media only screen and (max-width: 768px) {
+  .nav-container {
+    width: 95%;
+    justify-content: space-evenly;
+  }
+
+  .links {
+    display: none;
+  }
+  .button {
+    margin-left: 35px;
+  }
+  .icon i {
+    display: inline;
+    font-size: 35px;
+  }
+}
